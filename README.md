@@ -2,7 +2,7 @@
 
 This project emphasizes on building a linkedin clone web app.This project uses React, Redux and firebase as its techstack;
 
-# this linkedin clone web app have following features implementations:
+### This linkedin clone web app have following features implementations:
 - User Authentication and persistent user login across sessions using firebase auth service 
 - global states (e.g. user details) are managed using edux.
 - Different user can Create post, See others post, Like/Unlike each-others post in Real Time.
@@ -11,5 +11,5 @@ This project emphasizes on building a linkedin clone web app.This project uses R
 - Resposive UI
 
 
-# Live Link
+## Live Link
 https://linkedin-29e24.web.app/
