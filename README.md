@@ -12,4 +12,4 @@ This project emphasizes on building a linkedin clone web app.This project uses R
 
 
 ## Live Link
-https://linkedin-29e24.web.app/
+[link](https://linkedin-29e24.web.app/)
