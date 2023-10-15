@@ -1,0 +1,109 @@
+.feed {
+    flex: 0.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 50%;
+}
+
+.feed .feed__input {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.feed__input .input__top {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+.feed__input .input__top input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.feed__input .input__top input[type='submit'] {
+    display: none;
+    background-color: #2867b2;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.feed__input .input__top .input__box {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.feed__input .input__top .input__box:hover {
+    box-shadow: 0 0 3px black;
+}
+
+.feed__input .input__top .input__box:focus {
+    box-shadow: 0 0 3px black;
+}
+
+.input__bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+/* .post-form-group>input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-top: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.post-form-group>input[type='submit'] {
+    box-sizing: content-box;
+    height: 40px;
+    font-size: 20px;
+    background-color: #2867b2;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.post__wrapper {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.post-loading {
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .feed {
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .feed {
+        width: 90%;
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .feed {
+        flex: 0.9;
+    }
+}

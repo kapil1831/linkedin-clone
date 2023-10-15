@@ -1,0 +1,17 @@
+.option {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+.option:hover {
+    background-color: #ffffff33;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.option-icon {
+    width: 25px !important;
+    height: 25px !important;
+    font-size: medium !important;
+}

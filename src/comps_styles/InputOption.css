@@ -1,0 +1,40 @@
+.input__option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.input__option:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.input__option>p {
+    color: gray;
+}
+
+@media only screen and (max-width: 520px) {
+
+    .input__option {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .post .input__option .input__option__icon {
+        width: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .post .input__option {
+        flex-direction: column;
+    }
+
+    .post .input__option .input__option__icon {
+        width: 18px !important;
+    }
+}

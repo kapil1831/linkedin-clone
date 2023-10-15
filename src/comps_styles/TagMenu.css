@@ -1,0 +1,81 @@
+.tag-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.211);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    max-height: 240px;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    z-index: 99;
+    background-color: rgb(43, 41, 41);
+    color: gray;
+    /* scrollbar-color: gray #5d595933; */
+}
+
+.tag-menu-wrapper::-webkit-scrollbar {
+    width: 5px;
+    /* overflow: hidden; */
+    background-color: #5d595933;
+    overflow: hidden;
+
+    /* scrollbar-color: gray; */
+}
+
+.tag-menu-wrapper::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.tag-menu-wrapper .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #5d5959;
+    border-radius: 8px;
+    /* overflow-x: hidden; */
+}
+
+.tag-menu-wrapper .search-box .search-icon {
+    width: 18px !important;
+    height: 18px !important;
+    padding: 0px 10px;
+    padding-right: 0;
+    border: none;
+    /* background-color: #7f7e7e7e; */
+}
+
+.tag-menu-wrapper .search-box input {
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #5d5959;
+    max-width: 75%;
+}
+
+.tag-menu-wrapper .search-box input::placeholder {
+    color: #ffffff44;
+}
+
+.tag-menu-wrapper .tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.tag-menu-wrapper .tag>*:nth-child(1) {
+    opacity: 0;
+    color: rgba(10, 132, 255, 1);
+}
+
+.tag-menu-wrapper .tag:hover {
+    background-color: #5d595977;
+}

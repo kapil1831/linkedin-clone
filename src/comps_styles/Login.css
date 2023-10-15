@@ -1,0 +1,95 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.login>img {
+    object-fit: contain;
+    width: 150px;
+    margin: 20px auto;
+}
+
+
+.login .error {
+    text-align: center;
+    color: red;
+    padding: 10px 0;
+    max-width: 300px;
+}
+
+.form-group>input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    border-top: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.form-group>input:focus {
+    outline-color: #2867b2;
+}
+
+.form-group>input[type='submit'] {
+    box-sizing: content-box;
+    background-color: #2867b2;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.form-group>input[type='submit']:hover {
+    box-shadow: 0 0 10px gray;
+    background-color: #2867b2ee;
+}
+
+.login>p {
+    margin-top: 20px;
+}
+
+
+.login>p>span {
+    color: #2867b2;
+    cursor: pointer;
+}
+
+.login>p>span:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .login {
+        padding: 60px 0;
+    }
+
+    .form-group>input {
+        width: 280px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .login {
+        padding: 60px 0;
+    }
+
+    .form-group>input {
+        width: 220px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .login .error {
+        max-width: 220px;
+    }
+
+}

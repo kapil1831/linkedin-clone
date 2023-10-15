@@ -1,0 +1,115 @@
+.sidebar {
+    /* not working may be bcz the box stretching whote verticle length */
+    position: sticky;
+    top: 80px;
+    padding: 0;
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    object-fit: scale-down;
+    height: fit-content;
+
+}
+
+.sidebar__top,
+.sidebar__bottom {
+
+    border: 0.1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: fit-content;
+    background-color: white;
+}
+
+
+.sidebar__top>img {
+    object-fit: cover;
+    height: 60px;
+}
+
+.sidebar__avatar {
+    margin: 0 auto;
+    margin-top: -32px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.sidebar__top h2 {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.sidebar__top h4 {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 10px;
+    letter-spacing: .4px;
+    color: gray;
+}
+
+.sidebar__top .sidebar__stats {
+    color: gray;
+    margin: 20px 0;
+    padding: 10px;
+    border-top: 0.1px solid lightgray;
+}
+
+.sidebar__stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sidebar__stat .statNumber {
+    font-weight: bold;
+    color: rgb(84, 106, 230);
+}
+
+
+.sidebar__bottom {
+    text-align: start;
+    padding: 20px 0px;
+}
+
+.sidebar__bottom>* {
+    margin: 0 10px;
+}
+
+.sidebar__bottom>p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.sidebar__bottom .sidebar__recentitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    padding: 3px 0;
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar__bottom .sidebar__recentitem:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.sidebar__bottom .sidebar__hash {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}

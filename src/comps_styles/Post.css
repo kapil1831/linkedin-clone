@@ -1,0 +1,123 @@
+/* post style */
+
+.post {
+    background-color: white;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    /* font-size: 18px; */
+}
+
+.post__header {
+    display: flex;
+    gap: 10px;
+    color: gray;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.post__header__details {
+    /* flex: 2; */
+    width: 80%;
+    /* max-width: 80%; */
+}
+
+
+.post__ownername {
+    display: flex;
+    gap: 2px;
+}
+
+.post__ownername h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.post__ownername span {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.post__header .owner__shortdescription {
+    /* width: 350px; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post__header__morebtn .btn {
+    padding: 5px;
+}
+
+.post__header__morebtn .btn:hover {
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.post__text {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.post__img {
+    overflow: hidden;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+.post__img img {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+    /* object-fit: cover; */
+}
+
+.post__stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    padding: 10px 0;
+}
+
+.post__stats .stats__left,
+.post__stats .stats__right {
+    padding: 0 10px;
+}
+
+.post__footer .post__reaction__btns {
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.post__footer .post__reaction__btns .post__reactionbtn {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.post__footer .post__reaction__btns .post__reactionbtn:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 520px) {
+
+    .post {
+        font-size: 14px;
+    }
+
+    .post__ownername h2,
+    .post__ownername span {
+        font-size: 14px;
+    }
+}
